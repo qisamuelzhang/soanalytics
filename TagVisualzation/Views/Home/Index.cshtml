@@ -1,0 +1,1011 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+
+<div class="jumbotron">
+    <h1>Stack Overflow Analytics</h1>
+    <p class="lead">
+        Analytics on tags and their relationships of <a href="http://stackoverflow.com/">Stack Overflow</a>,
+        a question and answer site for professional and enthusiast programmers.
+    </p>
+</div>
+
+<div class="graph">
+
+</div>
+
+<script>
+    var graph =
+{
+    "nodes": [
+      {
+          "name": "c#",
+          "group": 1
+      },
+      {
+          "name": "winforms",
+          "group": 1
+      },
+      {
+          "name": "linq",
+          "group": 1
+      },
+      {
+          "name": "sql",
+          "group": 1
+      },
+      {
+          "name": "wpf",
+          "group": 1
+      },
+      {
+          "name": "javascript",
+          "group": 1
+      },
+      {
+          "name": "sql-server",
+          "group": 1
+      },
+      {
+          "name": "wcf",
+          "group": 1
+      },
+      {
+          "name": "multithreading",
+          "group": 1
+      },
+      {
+          "name": "xaml",
+          "group": 1
+      },
+      {
+          "name": "xml",
+          "group": 1
+      },
+      {
+          "name": "entity-framework",
+          "group": 1
+      },
+      {
+          "name": "visual-studio-2010",
+          "group": 1
+      },
+      {
+          "name": "forms",
+          "group": 1
+      },
+      {
+          "name": "php",
+          "group": 1
+      },
+      {
+          "name": "css",
+          "group": 1
+      },
+      {
+          "name": "css3",
+          "group": 1
+      },
+      {
+          "name": "html",
+          "group": 1
+      },
+      {
+          "name": "jquery",
+          "group": 1
+      },
+      {
+          "name": "html5",
+          "group": 1
+      },
+      {
+          "name": ".net",
+          "group": 1
+      },
+      {
+          "name": "vb.net",
+          "group": 1
+      },
+      {
+          "name": "asp.net",
+          "group": 1
+      },
+      {
+          "name": "database",
+          "group": 1
+      },
+      {
+          "name": "mysql",
+          "group": 1
+      },
+      {
+          "name": "c",
+          "group": 1
+      },
+      {
+          "name": "c++",
+          "group": 1
+      },
+      {
+          "name": "linux",
+          "group": 1
+      },
+      {
+          "name": "windows",
+          "group": 1
+      },
+      {
+          "name": "templates",
+          "group": 1
+      },
+      {
+          "name": "qt",
+          "group": 1
+      },
+      {
+          "name": "c++11",
+          "group": 1
+      },
+      {
+          "name": "actionscript-3",
+          "group": 1
+      },
+      {
+          "name": "flash",
+          "group": 1
+      },
+      {
+          "name": "regex",
+          "group": 1
+      },
+      {
+          "name": "wordpress",
+          "group": 1
+      },
+      {
+          "name": "eclipse",
+          "group": 1
+      },
+      {
+          "name": "java",
+          "group": 1
+      },
+      {
+          "name": "tsql",
+          "group": 1
+      },
+      {
+          "name": "sql-server-2008",
+          "group": 1
+      },
+      {
+          "name": "asp.net-mvc",
+          "group": 1
+      },
+      {
+          "name": "swing",
+          "group": 1
+      },
+      {
+          "name": "string",
+          "group": 1
+      },
+      {
+          "name": "servlets",
+          "group": 1
+      },
+      {
+          "name": "java-ee",
+          "group": 1
+      },
+      {
+          "name": "spring",
+          "group": 1
+      },
+      {
+          "name": "jsp",
+          "group": 1
+      },
+      {
+          "name": "apache",
+          "group": 1
+      },
+      {
+          "name": "arrays",
+          "group": 1
+      },
+      {
+          "name": "python",
+          "group": 1
+      },
+      {
+          "name": "python-2.7",
+          "group": 1
+      },
+      {
+          "name": "iphone",
+          "group": 1
+      },
+      {
+          "name": "objective-c",
+          "group": 1
+      },
+      {
+          "name": "xcode",
+          "group": 1
+      },
+      {
+          "name": "ruby",
+          "group": 1
+      },
+      {
+          "name": "ruby-on-rails",
+          "group": 1
+      },
+      {
+          "name": "ruby-on-rails-3",
+          "group": 1
+      },
+      {
+          "name": "oracle",
+          "group": 1
+      },
+      {
+          "name": "django",
+          "group": 1
+      },
+      {
+          "name": "json",
+          "group": 1
+      },
+      {
+          "name": "node.js",
+          "group": 1
+      },
+      {
+          "name": "ajax",
+          "group": 1
+      },
+      {
+          "name": "asp.net-mvc-3",
+          "group": 1
+      },
+      {
+          "name": "excel",
+          "group": 1
+      },
+      {
+          "name": "vba",
+          "group": 1
+      },
+      {
+          "name": ".htaccess",
+          "group": 1
+      },
+      {
+          "name": "mod-rewrite",
+          "group": 1
+      },
+      {
+          "name": "dom",
+          "group": 1
+      },
+      {
+          "name": "cocoa",
+          "group": 1
+      },
+      {
+          "name": "activerecord",
+          "group": 1
+      },
+      {
+          "name": "android",
+          "group": 1
+      },
+      {
+          "name": "listview",
+          "group": 1
+      },
+      {
+          "name": "sqlite",
+          "group": 1
+      },
+      {
+          "name": "android-intent",
+          "group": 1
+      },
+      {
+          "name": "android-layout",
+          "group": 1
+      },
+      {
+          "name": "cocoa-touch",
+          "group": 1
+      },
+      {
+          "name": "ios",
+          "group": 1
+      },
+      {
+          "name": "uitableview",
+          "group": 1
+      },
+      {
+          "name": "ipad",
+          "group": 1
+      },
+      {
+          "name": "codeigniter",
+          "group": 1
+      },
+      {
+          "name": "jquery-ui",
+          "group": 1
+      },
+      {
+          "name": "jquery-ajax",
+          "group": 1
+      },
+      {
+          "name": "boost",
+          "group": 1
+      },
+      {
+          "name": "hibernate",
+          "group": 1
+      },
+      {
+          "name": "facebook",
+          "group": 1
+      },
+      {
+          "name": "facebook-graph-api",
+          "group": 1
+      },
+      {
+          "name": "angularjs",
+          "group": 1
+      }
+    ],
+    "links": [
+      {
+          "source": 0,
+          "target": 1,
+          "value": 2
+      },
+      {
+          "source": 0,
+          "target": 2,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 3,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 4,
+          "value": 2
+      },
+      {
+          "source": 0,
+          "target": 5,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 6,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 7,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 8,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 9,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 10,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 11,
+          "value": 1
+      },
+      {
+          "source": 0,
+          "target": 12,
+          "value": 1
+      },
+      {
+          "source": 13,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 15,
+          "target": 16,
+          "value": 1
+      },
+      {
+          "source": 15,
+          "target": 17,
+          "value": 3
+      },
+      {
+          "source": 15,
+          "target": 5,
+          "value": 2
+      },
+      {
+          "source": 15,
+          "target": 18,
+          "value": 2
+      },
+      {
+          "source": 17,
+          "target": 5,
+          "value": 3
+      },
+      {
+          "source": 17,
+          "target": 18,
+          "value": 2
+      },
+      {
+          "source": 17,
+          "target": 19,
+          "value": 1
+      },
+      {
+          "source": 17,
+          "target": 14,
+          "value": 2
+      },
+      {
+          "source": 20,
+          "target": 0,
+          "value": 3
+      },
+      {
+          "source": 20,
+          "target": 21,
+          "value": 1
+      },
+      {
+          "source": 20,
+          "target": 22,
+          "value": 1
+      },
+      {
+          "source": 20,
+          "target": 1,
+          "value": 1
+      },
+      {
+          "source": 23,
+          "target": 24,
+          "value": 1
+      },
+      {
+          "source": 23,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 23,
+          "target": 3,
+          "value": 1
+      },
+      {
+          "source": 24,
+          "target": 14,
+          "value": 3
+      },
+      {
+          "source": 24,
+          "target": 3,
+          "value": 2
+      },
+      {
+          "source": 25,
+          "target": 26,
+          "value": 1
+      },
+      {
+          "source": 25,
+          "target": 27,
+          "value": 1
+      },
+      {
+          "source": 26,
+          "target": 28,
+          "value": 1
+      },
+      {
+          "source": 26,
+          "target": 29,
+          "value": 1
+      },
+      {
+          "source": 26,
+          "target": 30,
+          "value": 1
+      },
+      {
+          "source": 26,
+          "target": 31,
+          "value": 1
+      },
+      {
+          "source": 32,
+          "target": 33,
+          "value": 1
+      },
+      {
+          "source": 14,
+          "target": 3,
+          "value": 1
+      },
+      {
+          "source": 14,
+          "target": 34,
+          "value": 1
+      },
+      {
+          "source": 14,
+          "target": 35,
+          "value": 1
+      },
+      {
+          "source": 36,
+          "target": 37,
+          "value": 1
+      },
+      {
+          "source": 3,
+          "target": 6,
+          "value": 2
+      },
+      {
+          "source": 3,
+          "target": 38,
+          "value": 1
+      },
+      {
+          "source": 3,
+          "target": 39,
+          "value": 1
+      },
+      {
+          "source": 22,
+          "target": 0,
+          "value": 3
+      },
+      {
+          "source": 22,
+          "target": 5,
+          "value": 1
+      },
+      {
+          "source": 22,
+          "target": 21,
+          "value": 1
+      },
+      {
+          "source": 22,
+          "target": 40,
+          "value": 1
+      },
+      {
+          "source": 22,
+          "target": 18,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 10,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 41,
+          "value": 2
+      },
+      {
+          "source": 37,
+          "target": 42,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 43,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 44,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 45,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 46,
+          "value": 1
+      },
+      {
+          "source": 37,
+          "target": 8,
+          "value": 1
+      },
+      {
+          "source": 47,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 6,
+          "target": 39,
+          "value": 1
+      },
+      {
+          "source": 6,
+          "target": 38,
+          "value": 1
+      },
+      {
+          "source": 48,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 48,
+          "target": 37,
+          "value": 1
+      },
+      {
+          "source": 49,
+          "target": 50,
+          "value": 1
+      },
+      {
+          "source": 51,
+          "target": 52,
+          "value": 2
+      },
+      {
+          "source": 51,
+          "target": 53,
+          "value": 1
+      },
+      {
+          "source": 54,
+          "target": 55,
+          "value": 2
+      },
+      {
+          "source": 54,
+          "target": 56,
+          "value": 1
+      },
+      {
+          "source": 57,
+          "target": 3,
+          "value": 1
+      },
+      {
+          "source": 58,
+          "target": 49,
+          "value": 1
+      },
+      {
+          "source": 5,
+          "target": 18,
+          "value": 5
+      },
+      {
+          "source": 5,
+          "target": 14,
+          "value": 2
+      },
+      {
+          "source": 5,
+          "target": 34,
+          "value": 1
+      },
+      {
+          "source": 5,
+          "target": 59,
+          "value": 1
+      },
+      {
+          "source": 5,
+          "target": 60,
+          "value": 1
+      },
+      {
+          "source": 61,
+          "target": 5,
+          "value": 2
+      },
+      {
+          "source": 61,
+          "target": 18,
+          "value": 2
+      },
+      {
+          "source": 61,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 40,
+          "target": 0,
+          "value": 1
+      },
+      {
+          "source": 40,
+          "target": 62,
+          "value": 1
+      },
+      {
+          "source": 63,
+          "target": 64,
+          "value": 1
+      },
+      {
+          "source": 65,
+          "target": 66,
+          "value": 1
+      },
+      {
+          "source": 55,
+          "target": 56,
+          "value": 1
+      },
+      {
+          "source": 67,
+          "target": 5,
+          "value": 1
+      },
+      {
+          "source": 68,
+          "target": 52,
+          "value": 1
+      },
+      {
+          "source": 52,
+          "target": 53,
+          "value": 1
+      },
+      {
+          "source": 4,
+          "target": 9,
+          "value": 1
+      },
+      {
+          "source": 69,
+          "target": 55,
+          "value": 1
+      },
+      {
+          "source": 70,
+          "target": 36,
+          "value": 1
+      },
+      {
+          "source": 70,
+          "target": 37,
+          "value": 3
+      },
+      {
+          "source": 70,
+          "target": 71,
+          "value": 1
+      },
+      {
+          "source": 70,
+          "target": 72,
+          "value": 1
+      },
+      {
+          "source": 70,
+          "target": 73,
+          "value": 1
+      },
+      {
+          "source": 70,
+          "target": 10,
+          "value": 1
+      },
+      {
+          "source": 70,
+          "target": 74,
+          "value": 1
+      },
+      {
+          "source": 75,
+          "target": 76,
+          "value": 1
+      },
+      {
+          "source": 75,
+          "target": 51,
+          "value": 1
+      },
+      {
+          "source": 75,
+          "target": 52,
+          "value": 1
+      },
+      {
+          "source": 76,
+          "target": 51,
+          "value": 2
+      },
+      {
+          "source": 76,
+          "target": 52,
+          "value": 3
+      },
+      {
+          "source": 76,
+          "target": 53,
+          "value": 1
+      },
+      {
+          "source": 76,
+          "target": 77,
+          "value": 1
+      },
+      {
+          "source": 76,
+          "target": 78,
+          "value": 1
+      },
+      {
+          "source": 59,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 79,
+          "target": 14,
+          "value": 1
+      },
+      {
+          "source": 18,
+          "target": 59,
+          "value": 1
+      },
+      {
+          "source": 18,
+          "target": 80,
+          "value": 1
+      },
+      {
+          "source": 18,
+          "target": 14,
+          "value": 2
+      },
+      {
+          "source": 18,
+          "target": 81,
+          "value": 1
+      },
+      {
+          "source": 82,
+          "target": 26,
+          "value": 1
+      },
+      {
+          "source": 83,
+          "target": 37,
+          "value": 1
+      },
+      {
+          "source": 84,
+          "target": 85,
+          "value": 1
+      },
+      {
+          "source": 19,
+          "target": 5,
+          "value": 1
+      },
+      {
+          "source": 19,
+          "target": 18,
+          "value": 1
+      },
+      {
+          "source": 78,
+          "target": 51,
+          "value": 1
+      },
+      {
+          "source": 86,
+          "target": 5,
+          "value": 1
+      }
+    ]
+}
+    ;
+
+    var width = 1024,
+        height = 768;
+
+    var color = d3.scale.category20();
+
+    var force = d3
+        .layout
+        .force()
+        .charge(-150)
+        .linkDistance(100)
+        .size([width, height]);
+
+    var svg = d3
+        .select("div.graph")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    force
+        .nodes(graph.nodes)
+        .links(graph.links)
+        .start();
+
+    var link = svg
+        .selectAll(".link")
+        .data(graph.links)
+        .enter()
+        .append("line")
+        .attr("class", "graph-link")
+        .style("stroke-width", function (d) { return Math.sqrt(d.value); });
+
+    var group = svg
+        .selectAll(".node")
+        .data(graph.nodes)
+        .enter()
+        .append("g");
+
+    var node = group
+        .append("circle")
+        .attr("class", "graph-node")
+        .attr("r", 10)
+        .style("fill", function (d) { return color(d.group); })
+        .call(force.drag);
+
+    var label = group
+        .append("text")
+        .attr("dx", 12)
+        .attr("dy", 6)
+        .attr("class", "graph-label")
+        .text(function (d) { return d.name; });
+
+    force.on("tick", function () {
+        link.attr("x1", function (d) { return d.source.x; })
+            .attr("y1", function (d) { return d.source.y; })
+            .attr("x2", function (d) { return d.target.x; })
+            .attr("y2", function (d) { return d.target.y; });
+
+        group.attr("transform", function (d) { return "translate(" + [d.x, d.y] + ")"; });
+    });
+
+</script>

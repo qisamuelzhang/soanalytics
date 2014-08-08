@@ -5,6 +5,19 @@ VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagStatistics", "TagStatistics\TagStatistics.csproj", "{5B31CBFE-F4AB-414C-9E08-D74106D57D7D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TagVisualzation", "TagVisualzation\TagVisualzation.csproj", "{9C167B44-4E6C-43DF-A7C2-0C8C94BB9C4A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{5253834A-71B9-4DA6-B8B1-BB8A2874184D}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{8FCF4036-AA51-4E2B-8818-B13FF21572E5}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\TagVisualzation-WAWS-dev.json = PublishScripts\Configurations\TagVisualzation-WAWS-dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,8 +28,15 @@ Global
 		{5B31CBFE-F4AB-414C-9E08-D74106D57D7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5B31CBFE-F4AB-414C-9E08-D74106D57D7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5B31CBFE-F4AB-414C-9E08-D74106D57D7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C167B44-4E6C-43DF-A7C2-0C8C94BB9C4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C167B44-4E6C-43DF-A7C2-0C8C94BB9C4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C167B44-4E6C-43DF-A7C2-0C8C94BB9C4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C167B44-4E6C-43DF-A7C2-0C8C94BB9C4A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8FCF4036-AA51-4E2B-8818-B13FF21572E5} = {5253834A-71B9-4DA6-B8B1-BB8A2874184D}
 	EndGlobalSection
 EndGlobal
